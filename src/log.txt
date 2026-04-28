@@ -1,0 +1,31 @@
+ar006@bpi-08:~/vectorsum$ perf stat -e instructions,cycles,L1-dcache-loads,L1-dcache-load-misses ./vector
+Elements processed with VV: 64
+Time (vectorial): 7.58813 ms
+
+ Performance counter stats for './vector':
+
+        54.026.213      instructions                     #    0,47  insn per cycle            
+       114.829.188      cycles                                                                
+        23.578.696      L1-dcache-loads                                                       
+            99.918      L1-dcache-load-misses            #    0,42% of all L1-dcache accesses 
+
+       0,075350847 seconds time elapsed
+
+       0,049403000 seconds user
+       0,024701000 seconds sys
+
+
+ar006@bpi-08:~/vectorsum$ perf stat -e instructions,cycles,L1-dcache-loads,L1-dcache-load-misses ./scalar
+Time (scalar): 69.1106 ms
+
+ Performance counter stats for './scalar':
+
+       184.251.213      instructions                     #    0,67  insn per cycle            
+       276.996.934      cycles                                                                
+        59.998.646      L1-dcache-loads                                                       
+           101.702      L1-dcache-load-misses            #    0,17% of all L1-dcache accesses 
+
+       0,175862033 seconds time elapsed
+
+       0,158999000 seconds user
+       0,016307000 seconds sys

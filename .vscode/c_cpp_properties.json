@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "RISC-V-Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "__riscv_vector",
+                "__riscv_v_intrinsic=1000000" 
+            ],
+            "compilerPath": "/usr/bin/riscv64-linux-gnu-g++",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "compilerArgs": [
+                "-march=rv64gcv",
+                "-mabi=lp64d"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

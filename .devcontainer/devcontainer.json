@@ -1,0 +1,21 @@
+{
+    "name": "RISC-V Development Environment",
+    "image": "rvv:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "jeff-hykin.better-cpp-syntax",
+                "mcu-debug.riscv-debug",
+                "dan-c-underwood.riscv-asm",
+                "ms-vscode-remote.remote-containers"
+            ],
+            "settings": {
+                "editor.fontSize": 18,
+                "editor.mouseWheelZoom": true
+            }
+        }
+    },
+    "remoteUser": "root"
+}
