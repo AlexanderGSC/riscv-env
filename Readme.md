@@ -1,4 +1,4 @@
-R## RISC-V Vector Development Environment (RVV 1.0 Lab)
+## RISC-V Vector Development Environment (RVV 1.0 Lab)
 Docker-based development environment for RISC-V Vector Extension (RVV 1.0) experimentation, enabling reproducible workflows for SIMD optimization, compiler analysis, and low-level performance evaluation.
 This environment is part of the PERTE Chip training program, with access to real RISC-V vector hardware (Banana Pi BPI-F3) for performance validation beyond emulation.
 ### 🔥 Key Highlights
